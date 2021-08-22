@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -27,6 +28,7 @@ console.log(greeter.greet());
 var Animal = /** @class */ (function () {
     function Animal(theName) {
         this.name = theName;
+        this.numberOfLegs = 0;
     }
     Animal.prototype.move = function (distanceInMiles) {
         if (distanceInMiles === void 0) { distanceInMiles = 0; }

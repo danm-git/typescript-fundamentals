@@ -26,6 +26,7 @@ let strNumTuple: [string, string, number, boolean] = [
   myBool,
 ];
 
+let myUnion2: number | string = 123;
 let myUnion: string | number;
 myUnion = myString;
 console.log(myUnion);

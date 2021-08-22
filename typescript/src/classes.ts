@@ -16,6 +16,7 @@ class Animal {
   private numberOfLegs: number;
   constructor(theName: string) {
     this.name = theName;
+    this.numberOfLegs = 0;
   }
   move(distanceInMiles: number = 0) {
     console.log("moved " + distanceInMiles + " miles");

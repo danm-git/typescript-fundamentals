@@ -1,3 +1,4 @@
+"use strict";
 console.log("Hey hey world");
 var myString = "Hello Blockchain Engineers!!!";
 console.log(myString);
@@ -16,6 +17,7 @@ var strNumTuple = [
     myNum,
     myBool,
 ];
+var myUnion2 = 123;
 var myUnion;
 myUnion = myString;
 console.log(myUnion);

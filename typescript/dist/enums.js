@@ -1,3 +1,4 @@
+"use strict";
 var Colors;
 (function (Colors) {
     Colors[Colors["RED"] = 0] = "RED";
