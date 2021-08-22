@@ -32,6 +32,12 @@ var Animal = /** @class */ (function () {
         if (distanceInMiles === void 0) { distanceInMiles = 0; }
         console.log("moved " + distanceInMiles + " miles");
     };
+    Animal.prototype.setNumberOfLegs = function (numLegs) {
+        this.numberOfLegs = numLegs;
+    };
+    Animal.prototype.getNumberOfLegs = function () {
+        return this.numberOfLegs;
+    };
     return Animal;
 }());
 var Dog = /** @class */ (function (_super) {
@@ -48,3 +54,6 @@ var Dog = /** @class */ (function (_super) {
 var yeppi = new Dog("Yeppi");
 console.log(yeppi);
 console.log(yeppi.move());
+console.log(yeppi.getNumberOfLegs());
+yeppi.setNumberOfLegs(4);
+console.log(yeppi.getNumberOfLegs());

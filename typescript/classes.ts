@@ -13,11 +13,18 @@ console.log(greeter.greet());
 
 class Animal {
   name: string;
+  private numberOfLegs: number;
   constructor(theName: string) {
     this.name = theName;
   }
   move(distanceInMiles: number = 0) {
     console.log("moved " + distanceInMiles + " miles");
+  }
+  setNumberOfLegs(numLegs: number) {
+    this.numberOfLegs = numLegs;
+  }
+  getNumberOfLegs() {
+    return this.numberOfLegs;
   }
 }
 
@@ -34,3 +41,7 @@ class Dog extends Animal {
 let yeppi = new Dog("Yeppi");
 console.log(yeppi);
 console.log(yeppi.move());
+
+console.log(yeppi.getNumberOfLegs());
+yeppi.setNumberOfLegs(4);
+console.log(yeppi.getNumberOfLegs());
